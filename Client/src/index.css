@@ -1,0 +1,34 @@
+:root {
+  --color-pink: #FF99C8;
+  --color-yellow: #FCF6BD;
+  --color-peach: #00ffe1;
+  --color-blue: #A9DEF9;
+  --color-purple: #E4C1F9;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+}
+body {
+  overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+}
+.Button {
+  font-weight: 600;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--color-peach);
+  color: black;
+}
+
+.Button:hover {
+  background-color: #05d4bc;
+  color: white;
+
+}
+
+
+

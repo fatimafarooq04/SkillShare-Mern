@@ -1,0 +1,111 @@
+.navbar-nav .nav-link {
+  position: relative;
+  display: inline-block;
+  color: var(--color-white) ;
+  font-weight: 600 ;
+  font-size: 20px ;
+  text-decoration: none  ;
+  transition: color 0.3s ease ;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--color-peach);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--color-peach);
+}
+
+.navbar-nav .nav-link:hover::after {
+  transform: scaleX(1); 
+}
+.avatar-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.avatar-dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-menu-avatar {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 0;
+  min-width: 160px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+}
+
+.dropdown-menu-avatar a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.dropdown-menu-avatar a:hover {
+  background-color: #f2f2f2;
+}
+
+.button a{
+text-decoration: none;}
+/* Optional: better icon spacing */
+.icon-btn {
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+}
+/* --- Search Wrapper --- */
+.search-wrapper {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+}
+
+/* --- Search Icon --- */
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 1rem;
+  z-index: 2;
+}
+
+/* --- Search Input --- */
+.search-input {
+  padding-left: 40px;
+  padding-right: 15px;
+  height: 38px;
+  background-color: #fff;
+  border: none;
+  border-radius: 999px; /* fully rounded */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+  font-size: 0.95rem;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+  border-color: transparent;
+}

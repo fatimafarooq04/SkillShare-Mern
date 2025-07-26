@@ -1,0 +1,292 @@
+/* Hero Section  */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.5); 
+  display: flex;
+  justify-content: flex-start; /* Align content to right */
+  align-items: center;
+  padding: 3rem;
+  box-sizing: border-box;
+}
+
+.hero-content-left {
+  max-width: 600px;
+  color: white;
+  /* background-color: rgba(0, 0, 0, 0.6); */
+  padding: 2rem;
+  border-radius: 16px;
+}
+
+.hero-title {
+  width: max-content;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+/* Type Animation  */
+.hero-type-line {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.hero-type-line span {
+  color: var(--color-peach); 
+  font-weight: 700;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.hero-description {
+  text-shadow: #0f2027 2px 3px ;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+.typing-text {
+  font-size: 2em;
+  display: inline-block;
+  color: var(--color-peach); /* Optional */
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .typing-text {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 576px) {
+  .typing-text {
+    font-size: 1.1em;
+  }
+}
+
+/* Why Choose  */
+.card {
+
+   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+}
+/* ------------------------------------------How It Works =------------------------------------------ */
+.how-flow-section {
+  padding: 5rem 2rem;
+  background: #0f2027;
+  color: white;
+  text-align: center;
+}
+
+.flow-title {
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+  color: var(--color-peach);
+  font-weight: bold;
+}
+
+.flow-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.flow-step {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.flow-step:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.flow-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-peach);
+}
+
+.flow-connector {
+  font-size: 3rem;
+  color: var(--color-peach);
+  margin: 0 1rem;
+}
+
+/*------------------------------------------ Testimonial section--------------------------*/
+.testimonial-section {
+  padding: 60px 20px;
+  background: linear-gradient(to bottom right, #fdfbfb, #ebedee);
+  overflow: hidden;
+  text-align: center;
+}
+
+.testimonial-heading {
+  font-size: 2.4rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.testimonial-slider {
+  display: flex;
+  gap: 25px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.reverse {
+  margin-top: 30px;
+}
+
+.testimonial-card {
+  min-width: 280px;
+  padding: 25px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ffdde1 0%, #ee9ca7 100%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:nth-child(2n) {
+  background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
+.testimonial-card:nth-child(3n) {
+  background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
+}
+
+.testimonial-card:nth-child(4n) {
+  background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.name {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #444;
+}
+/*----------------------Call to Action----------------------*/
+.cta-banner {
+  background: linear-gradient(135deg, #ff99c8, #a9def9);
+  padding: 60px 30px;
+  /* border-radius: 20px; */
+  text-align: center;
+  /* margin: 60px auto; */
+  max-width: 100%;
+  color: #fff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.cta-heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.cta-subtext {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+.cta-button {
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+  .flow-wrapper {
+    flex-direction: column;
+  }
+
+  .flow-connector {
+    transform: rotate(90deg);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  @media (max-width: 576px) {
+
+  .hero-overlay {
+    padding: 1.5rem;
+  }
+.hero-title{
+  width: 100%;
+}
+  .hero-content-left {
+    padding: 1rem;
+    width: 90%;
+  }
+  
+
+  .flow-step {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+  }
+}
+
+}
