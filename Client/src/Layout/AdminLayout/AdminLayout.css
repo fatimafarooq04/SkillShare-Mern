@@ -1,0 +1,42 @@
+/* src/Layout/AdminLayout/AdminLayout.css */
+
+.admin-layout {
+    display: flex; /* Use flexbox to lay out sidebar and main content */
+    min-height: 100vh; /* Ensure layout takes full viewport height */
+    background-color: #f0f2f5; /* Background for the entire layout */
+}
+
+.main-content {
+    flex-grow: 1; /* Allows main content to take up remaining space */
+    margin-left: 230px; /* Initial margin to offset the open sidebar width */
+    padding: 20px; /* General padding for content inside */
+    transition: margin-left 0.3s ease; /* Smooth transition for margin changes */
+    box-sizing: border-box; /* Include padding in element's total width */
+}
+
+/* Style for main content when sidebar is closed */
+.main-content-shifted {
+    margin-left: 70px; /* New margin to offset the closed sidebar width */
+}
+
+/* --- Responsive Adjustments --- */
+
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0; /* No margin when sidebar is hidden on small screens */
+    }
+    .main-content-shifted {
+        margin-left: 0; /* Still no margin when sidebar is hidden */
+    }
+
+    /* Adjust the sidebar toggle button's position for small screens */
+    /* This needs to be in Sidebar.css, but relevant here for context */
+    /*
+    .sidebar-toggle {
+        left: 20px;
+        transform: translateX(0);
+        position: fixed;
+        z-index: 1001;
+    }
+    */
+}

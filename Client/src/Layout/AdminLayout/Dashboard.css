@@ -1,0 +1,148 @@
+.admin-dashboard {
+  margin-left: 230px;
+  padding: 40px;
+  background: #f9fbfd;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Header */
+.dashboard-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.dashboard-header h1 {
+  font-size: 36px;
+  color: #222;
+  margin-bottom: 8px;
+}
+
+.dashboard-header p {
+  color: #666;
+  font-size: 16px;
+}
+
+/* Metrics Section */
+.dashboard-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.metric-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.metric-card:hover {
+  transform: translateY(-6px);
+}
+
+.metric-card h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.metric-card p {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.positive {
+  color: #2ecc71;
+  font-size: 14px;
+  margin-left: 6px;
+}
+
+.neutral {
+  color: #95a5a6;
+  font-size: 14px;
+  margin-left: 6px;
+}
+
+/* Colorful borders */
+.metric-card.users { border-left: 5px solid #00bcd4; }
+.metric-card.courses { border-left: 5px solid #4caf50; }
+.metric-card.feedback { border-left: 5px solid #ff9800; }
+.metric-card.earnings { border-left: 5px solid #9c27b0; }
+
+/* Dashboard Content */
+.dashboard-content {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1.5fr;
+  gap: 25px;
+  align-items: start;
+}
+
+.chart-box, .activity-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.chart-box h3, .activity-box h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.chart-placeholder {
+  height: 220px;
+  border: 2px dashed #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-style: italic;
+  border-radius: 8px;
+}
+
+/* Activity */
+.activity-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.activity-box li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 15px;
+}
+
+.activity-box li span {
+  float: right;
+  font-size: 13px;
+  color: #999;
+}
+.metric-card.instructors {
+  border-left: 6px solid #9b59b6; /* purple */
+  /* background-color: #f9f5ff; */
+}
+
+.metric-card.students {
+  border-left: 6px solid #f39c12; /* orange */
+  /* background-color: #fffaf2; */
+}
+.dashboard-chart .chart-box.large {
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}

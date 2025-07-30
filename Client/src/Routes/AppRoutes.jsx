@@ -2,6 +2,10 @@ import AdminLayout from "../Layout/AdminLayout/AdminLayout";
 import Dashboard from "../Layout/AdminLayout/Dashboard";
 import Users from "../Layout/AdminLayout/Users";
 import UserLayout from "../Layout/UserLayout/UserLayout";
+import LanguagesAdd from "../Pages/Admin/Languages/LanguagesAdd";
+import LanguageShow from "../Pages/Admin/Languages/LanguageShow";
+import SkillsAdd from "../Pages/Admin/Skills/SkillsAdd";
+import SkillsShow from "../Pages/Admin/Skills/SkillsShow";
 import Signin from "../Pages/Auth/Signin";
 import Signup from "../Pages/Auth/Signup";
 import VerifiedAlready from "../Pages/Auth/VerifiedAlready";
@@ -76,6 +80,22 @@ const router = createBrowserRouter([
             {
                 path: '/admin/users',
                 element: <Users />
+            },
+            {
+                path: '/admin/skillsadd',
+                element: <SkillsAdd />
+            },
+            {
+                path: '/admin/skillsshow',
+                element: <SkillsShow />
+            },
+             {
+                path: '/admin/languageadd',
+                element: <LanguagesAdd />
+            },
+             {
+                path: '/admin/languageshow',
+                element: <LanguageShow />
             },
         ]
     },
